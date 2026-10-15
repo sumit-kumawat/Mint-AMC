@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 8px;
+  --brand: #2fa878;
+  --brand-hover: #268e65;
+  --secondary: #0076ce;
+  --secondary-hover: #005fa7;
+  --accent: #2fa878;
+  --ink: #1b2430;
+  --ink-muted: #526170;
+  --surface: #ffffff;
+  --surface-muted: #f4f7f9;
+  --line: #dce4ea;
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased bg-surface text-ink;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-surface text-ink font-sans text-sm sm:text-base font-normal leading-relaxed min-h-screen flex flex-col selection:bg-brand/15 selection:text-ink;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-ink tracking-tight font-semibold text-balance;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-surface;
+  }
+}
+
+@layer components {
+  /* IT Industry Standard Typography Tokens */
+  .type-eyebrow {
+    @apply font-sans text-xs font-semibold uppercase tracking-wider text-brand;
+  }
+
+  .type-display {
+    @apply font-sans text-2xl sm:text-4xl lg:text-[2.5rem] font-semibold text-ink tracking-tight leading-[1.2];
+  }
+
+  .type-page-title {
+    @apply font-sans text-2xl sm:text-3xl lg:text-[2.25rem] font-semibold text-ink tracking-tight leading-[1.22];
+  }
+
+  .type-section-title {
+    @apply font-sans text-xl sm:text-2xl lg:text-[1.75rem] font-semibold text-ink tracking-tight leading-[1.28];
+  }
+
+  .type-card-title {
+    @apply font-sans text-base sm:text-lg font-semibold text-ink leading-snug;
+  }
+
+  .type-lead {
+    @apply font-sans text-base sm:text-lg text-ink-muted leading-relaxed font-normal text-pretty;
+  }
+
+  .type-body {
+    @apply font-sans text-sm sm:text-base text-ink-muted leading-relaxed font-normal;
+  }
+
+  .type-caption {
+    @apply font-sans text-xs text-ink-muted leading-normal font-normal;
+  }
+
+  /* Consistent 8px Border Radius Tokens — Minimal Enterprise Standard */
+  .ui-card {
+    @apply rounded-[8px] border border-line bg-surface shadow-card transition-colors duration-150;
+  }
+
+  .ui-card-interactive {
+    @apply rounded-[8px] border border-line bg-surface shadow-card transition-colors duration-150 hover:border-brand/60 hover:shadow-card-hover;
+  }
+
+  .ui-card-muted {
+    @apply rounded-[8px] border border-line bg-surface-muted;
+  }
+
+  .ui-input {
+    @apply w-full rounded-[8px] border border-line bg-surface px-3.5 py-2.5 text-sm font-normal text-ink placeholder:text-ink-subtle transition-colors focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20;
+  }
+
+  .ui-table-wrap {
+    @apply w-full overflow-x-auto rounded-[8px] border border-line bg-surface shadow-card;
+  }
+
+  .ui-table {
+    @apply w-full text-left border-collapse text-sm font-normal;
+  }
+
+  .ui-table th {
+    @apply bg-surface-muted px-4 py-3 text-xs font-semibold uppercase tracking-wider text-ink border-b border-line whitespace-nowrap;
+  }
+
+  .ui-table td {
+    @apply px-4 py-3 text-ink-muted font-normal border-b border-line align-middle;
+  }
+
+  .ui-table tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .ui-table tbody tr {
+    @apply transition-colors hover:bg-surface-muted/60;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,67 @@
+export const siteContent = {
+  brandName: 'Mint AMC',
+  siteUrl: 'https://mintamc.com',
+  parentCompany: {
+    name: 'CONZEX GLOBAL PRIVATE LIMITED',
+    url: 'https://www.conzex.com',
+    cin: 'U72900DL2021PTC384501',
+    address: 'B404 Atulya Nirman, Punawale, Pune (MH), INDIA 411033',
+  },
+  divisions: [
+    {
+      name: 'Mint AMC',
+      url: '/',
+      description: 'PAN-India IT AMC, field engineering, and NOC services.',
+    },
+    {
+      name: 'xHosting',
+      url: 'https://www.conzex.com',
+      description: 'Web hosting, domain registration, and cloud infrastructure.',
+    },
+    {
+      name: 'xData Center',
+      url: 'https://dcops.conzex.com',
+      description: 'Data centre colocation, dcops, and managed infrastructure.',
+    },
+    {
+      name: 'Defendx',
+      url: 'https://www.defendx.io',
+      description: 'Next-gen cybersecurity, threat detection, and SOC services.',
+    },
+    {
+      name: 'UiDRAC SaaS',
+      url: 'https://uidrac.cloud.conzex.com',
+      description: 'Universal iDRAC & out-of-band server management SaaS platform.',
+    },
+  ],
+  contact: {
+    businessEmail: 'info@mintamc.com',
+    proposalEmail: 'proposal@mintamc.com',
+    supportEmail: 'support@mintamc.com',
+    email: 'info@mintamc.com',
+    phone: '(+91) 800 7060 308',
+    nocHotline: '(+91) 800 7060 308',
+    headquarters: 'B404 Atulya Nirman, Punawale, Pune (MH), INDIA 411033',
+    workingHours: 'Business Desk: Mon–Sat, 9:00 AM – 6:00 PM IST · Technical Support Desk available for contracted clients',
+  },
+  nav: {
+    home: { label: 'Home', href: '/' },
+    services: { label: 'Services', href: '/services' },
+    solutions: { label: 'Solutions', href: '/solutions' },
+    pricing: { label: 'Pricing', href: '/pricing' },
+    why: { label: 'Why Mint AMC', href: '/why-mint-amc' },
+    about: { label: 'About', href: '/about' },
+    resources: { label: 'Resources', href: '/resources' },
+    contact: { label: 'Contact', href: '/contact' },
+  },
+  megaMenuFooterCta: 'Need a tailored IT maintenance scope for your locations?',
+  megaMenuFooterLink: 'Request a Proposal',
+  headerCta: 'Contact Us',
+  footerTagline:
+    'Structured enterprise IT Annual Maintenance Contracts (AMC), scheduled preventive maintenance, and multi-vendor field engineering support across commercial and branch facilities.',
+  footerDivisionsHeading: 'Technology Network',
+  footerLegalHeading: 'Governance & Legal',
+  footerPrivacyLink: 'Privacy Policy',
+  footerTermsLink: 'Terms of Service',
+  footerSlaLink: 'SLA Overview',
+};
